@@ -32,14 +32,16 @@ android {
     compileSdkVersion 33
 
     namespace 'com.spencerccf.app_settings'
-    
+
+    // Updated to use Java 17
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
+    // Updated to use Kotlin JVM 17
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
 
     sourceSets {
